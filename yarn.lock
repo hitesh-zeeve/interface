@@ -6161,6 +6161,17 @@
     tiny-invariant "^1.1.0"
     toformat "^2.0.0"
 
+"@uniswap/sdk-core@hitesh-zeeve/sdk-core#demoNet-1010":
+  version "4.0.6-cdk-0"
+  resolved "https://codeload.github.com/hitesh-zeeve/sdk-core/tar.gz/054d91bf44d1586511ef1c35cb8a497b84dad6c9"
+  dependencies:
+    "@ethersproject/address" "^5.0.2"
+    big.js "^5.2.2"
+    decimal.js-light "^2.5.0"
+    jsbi "^3.1.4"
+    tiny-invariant "^1.1.0"
+    toformat "^2.0.0"
+
 "@uniswap/smart-order-router@^3.15.0":
   version "3.15.0"
   resolved "https://registry.yarnpkg.com/@uniswap/smart-order-router/-/smart-order-router-3.15.0.tgz#f9e1f7ecdf48b9bae7c182acb99289e3ee1acce3"
@@ -6228,10 +6239,23 @@
     "@uniswap/sdk-core" "^4.0.3"
     ethers "^5.7.0"
 
-"@uniswap/universal-router-sdk@^1.5.4", "@uniswap/universal-router-sdk@^1.5.8":
+"@uniswap/universal-router-sdk@^1.5.4":
   version "1.5.8"
   resolved "https://registry.yarnpkg.com/@uniswap/universal-router-sdk/-/universal-router-sdk-1.5.8.tgz#16c62c3883e99073ba8b6e19188cf418b6551847"
   integrity sha512-9tDDBTXarpdRfJStF5mDCNmsQrCfiIT6HCQN1EPq0tAm2b+JzjRkUzsLpbNpVef066FETc3YjPH6JDPB3CMyyA==
+  dependencies:
+    "@uniswap/permit2-sdk" "^1.2.0"
+    "@uniswap/router-sdk" "^1.6.0"
+    "@uniswap/sdk-core" "^4.0.0"
+    "@uniswap/universal-router" "1.4.3"
+    "@uniswap/v2-sdk" "^3.2.0"
+    "@uniswap/v3-sdk" "^3.10.0"
+    bignumber.js "^9.0.2"
+    ethers "^5.3.1"
+
+"@uniswap/universal-router-sdk@hitesh-zeeve/universal-router-sdk#demoNet-1010":
+  version "1.5.8-cdk-0"
+  resolved "https://codeload.github.com/hitesh-zeeve/universal-router-sdk/tar.gz/2b7e56b6d34533713016f0590b81bedd85383f18"
   dependencies:
     "@uniswap/permit2-sdk" "^1.2.0"
     "@uniswap/router-sdk" "^1.6.0"

@@ -15,6 +15,7 @@ export const CHAIN_IDS_TO_NAMES = {
   [ChainId.BNB]: 'bnb',
   [ChainId.AVALANCHE]: 'avalanche',
   [ChainId.BASE]: 'base',
+  [ChainId.POLYGON_CDK]: 'polygon_cdk',
 } as const
 
 // Include ChainIds in this array if they are not supported by the UX yet, but are already in the SDK.
@@ -53,6 +54,7 @@ export const SUPPORTED_GAS_ESTIMATE_CHAIN_IDS = [
   ChainId.BNB,
   ChainId.AVALANCHE,
   ChainId.BASE,
+  ChainId.POLYGON_CDK,
 ] as const
 
 /**
@@ -82,6 +84,7 @@ export const L1_CHAIN_IDS = [
   ChainId.CELO_ALFAJORES,
   ChainId.BNB,
   ChainId.AVALANCHE,
+  ChainId.POLYGON_CDK,
 ] as const
 
 export type SupportedL1ChainId = (typeof L1_CHAIN_IDS)[number]

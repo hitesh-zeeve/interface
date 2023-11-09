@@ -30,6 +30,7 @@ export const RPC_PROVIDERS: { [key in SupportedInterfaceChain]: StaticJsonRpcPro
   [ChainId.BNB]: providerFactory(ChainId.BNB),
   [ChainId.AVALANCHE]: providerFactory(ChainId.AVALANCHE),
   [ChainId.BASE]: providerFactory(ChainId.BASE),
+  [ChainId.POLYGON_CDK]: providerFactory(ChainId.POLYGON_CDK),
 }
 
 export const DEPRECATED_RPC_PROVIDERS: { [key in SupportedInterfaceChain]: AppStaticJsonRpcProvider } = {

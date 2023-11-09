@@ -13,6 +13,7 @@ const BLOCK_EXPLORER_PREFIXES: { [chainId: number]: string } = {
   [ChainId.BNB]: 'https://bscscan.com',
   [ChainId.AVALANCHE]: 'https://snowtrace.io',
   [ChainId.BASE]: 'https://basescan.org',
+  [ChainId.POLYGON_CDK]: 'https://expl2.demonetwork-vali-f671c9.zeeve.net/',
 }
 
 export enum ExplorerDataType {

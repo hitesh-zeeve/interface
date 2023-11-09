@@ -31,6 +31,7 @@ export function getChainUI(chainId: ChainId, darkMode: boolean): ChainUI | undef
       }
     case ChainId.POLYGON:
     case ChainId.POLYGON_MUMBAI:
+    case ChainId.POLYGON_CDK:
       return {
         Symbol: polygon,
         bgColor: '#9558FF33',

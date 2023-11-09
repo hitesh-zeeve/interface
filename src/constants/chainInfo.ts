@@ -17,6 +17,7 @@ export const START_BLOCKS: { [key: number]: number } = {
   [ChainId.BNB]: 26324014,
   [ChainId.AVALANCHE]: 31422450,
   [ChainId.BASE]: 1371680,
+  [ChainId.POLYGON_CDK]: 0,
 }
 
 export enum NetworkType {
@@ -223,6 +224,15 @@ const CHAIN_INFO: ChainInfoMap = {
     statusPage: 'https://status.base.org/',
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     color: darkTheme.chain_84531,
+  },
+  [ChainId.POLYGON_CDK]: {
+    networkType: NetworkType.L1,
+    docs: 'https://docs.uniswap.org/',
+    explorer: 'https://expl2.demonetwork-vali-f671c9.zeeve.net/',
+    infoLink: 'https://info.uniswap.org/#/',
+    label: 'Polygon CDK',
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    color: darkTheme.chain_1,
   },
 } as const
 

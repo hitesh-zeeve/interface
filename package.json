@@ -18,9 +18,9 @@
     "i18n:compile": "lingui compile",
     "i18n": "yarn i18n:extract --clean && yarn i18n:compile",
     "prepare": "concurrently \"npm:ajv\" \"npm:contracts\" \"npm:graphql\" \"npm:i18n\"",
-    "start": "SET NODE_ENV=production && craco start",
+    "start": "NODE_ENV=production && craco start",
     "start:cloud": "NODE_OPTIONS=--dns-result-order=ipv4first PORT=3001 npx wrangler pages dev --compatibility-flags=nodejs_compat --compatibility-date=2023-08-01 --proxy=3001 --port=3000 -- yarn start",
-    "build": "craco build",
+    "build": "NODE_ENV=production && craco build",
     "analyze": "source-map-explorer 'build/static/js/*.js' --no-border-checks --gzip",
     "serve": "serve build -s -l 3000",
     "lint": "yarn eslint --ignore-path .gitignore --cache --cache-location node_modules/.cache/eslint/ .",
@@ -201,11 +201,11 @@
     "@uniswap/permit2-sdk": "^1.2.0",
     "@uniswap/redux-multicall": "^1.1.8",
     "@uniswap/router-sdk": "^1.6.0",
-    "@uniswap/sdk-core": "hitesh-zeeve/sdk-core#demoNet-1010",
+    "@uniswap/sdk-core": "file:../universal-router-sdk",
     "@uniswap/smart-order-router": "^3.15.0",
     "@uniswap/token-lists": "^1.0.0-beta.33",
     "@uniswap/uniswapx-sdk": "^1.4.1",
-    "@uniswap/universal-router-sdk": "hitesh-zeeve/universal-router-sdk#demoNet-1010",
+    "@uniswap/universal-router-sdk": "file:../universal-router-sdk",
     "@uniswap/v2-core": "^1.0.1",
     "@uniswap/v2-periphery": "^1.1.0-beta.0",
     "@uniswap/v2-sdk": "^3.2.0",
@@ -303,7 +303,7 @@
   },
   "engines": {
     "npm": "please-use-yarn",
-    "node": "18.x",
+    "node": "16.x",
     "yarn": ">=1.22"
   }
 }
